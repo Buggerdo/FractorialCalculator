@@ -1,10 +1,15 @@
-﻿namespace FractorialCalculator
+﻿using static FractorialCalculator.Continue;
+
+namespace FractorialCalculator
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            do
+            {
+                _ = new Calculator();
+            } while(IsContinue());
         }
     }
 }
